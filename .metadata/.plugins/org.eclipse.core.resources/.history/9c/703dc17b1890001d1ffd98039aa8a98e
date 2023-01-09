@@ -1,0 +1,29 @@
+package chap2;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.Before;
+import org.junit.jupiter.api.Test;
+
+public class JunitCalculator {
+	// 중복 코드 제거 
+	private Calculator cal; 
+	
+	@Before
+	public void setup() {
+		cal = new Calculator();
+	}
+	
+
+	@Test
+	public void add() {
+		System.out.println(cal.add(6, 3));
+		assertEquals(9, cal.add(6, 3));
+	}
+	
+	@Test
+	public void subtract() {
+		System.out.println(cal.subtract(6, 3));
+		assertEquals(3, cal.subtract(6, 3));
+	}
+}
