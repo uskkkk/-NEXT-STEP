@@ -1,0 +1,43 @@
+package calculator;
+
+import javax.management.RuntimeErrorException;
+
+public class StringCalculator {
+	Error e = new Error();
+	public int add(String text) {
+		int addAll = 0;
+		if (text.isEmpty() || text.equals("") || text == null) {
+			return 0;
+		} else if (check(text))  { 
+			String[] numbers = text.split(",");
+			for (int j = 0; j < numbers.length; j++) {
+				int add = Integer.parseInt(numbers[j]); 
+				addAll += add;
+			}
+			return addAll;
+		}else if (!text.isEmpty()) {
+			return Integer.parseInt(text);
+		} else if (Integer.parseInt(text) < 0) {
+			throw new RuntimeErrorException(e,"음수 발견");
+		}
+		
+		
+		
+		return 0;
+	}
+	
+	public static void main(String[] args) {
+		StringCalculator st = new StringCalculator();
+		System.out.println(st.add("1,3"));
+	}
+	
+	public Boolean check(String text) {
+		for (int i = 0; i < text.length(); i++) {
+			char ch = text.charAt(i);
+			if (",".equals(ch)) {
+				return true;
+			}
+		}
+		return false;
+	}
+}

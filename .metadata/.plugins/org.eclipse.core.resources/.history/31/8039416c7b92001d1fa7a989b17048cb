@@ -1,0 +1,25 @@
+package calculator;
+
+import javax.management.RuntimeErrorException;
+
+public class StringCalculator {
+	int number = 0;
+	int add(String text) {
+		try {
+			if (text == null || text.isEmpty()) {
+				return number;
+			} else if (text.matches("[0-9]*")) {
+				number = Integer.parseInt(text);
+			} else if (text.matches(regex))
+		} catch (Exception e) {
+			
+		}
+		return number;
+	}
+	
+	public static void main(String[] args) {
+		String text = "10";
+		
+		System.out.println(text.matches("[0-9]*"));
+	}
+}

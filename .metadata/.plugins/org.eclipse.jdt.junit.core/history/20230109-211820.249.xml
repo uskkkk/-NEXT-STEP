@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="JunitCalculator.subtract" project="자바 웹 프로그래밍 NEXT_STEP" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="chap2.JunitCalculator" time="0.015" displayname="JunitCalculator" uniqueid="[engine:junit-jupiter]/[class:chap2.JunitCalculator]">
-    <testcase name="subtract" classname="chap2.JunitCalculator" time="0.015" displayname="subtract()" uniqueid="[engine:junit-jupiter]/[class:chap2.JunitCalculator]/[method:subtract()]"/>
-  </testsuite>
-</testrun>

@@ -1,0 +1,28 @@
+package test;
+
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+
+import calculator.StringCalculator;
+
+public class StringCalculatorTest {
+	
+	private StringCalculator sCal;
+	
+	@Before
+	public void setup() {
+		sCal = new StringCalculator();
+	}
+	
+	@Test
+	public void add() {
+		assertEquals(6, sCal.add("1,2:3"));
+		Assertions.assertSame(Exception.class, sCal.add("-1"));
+		System.out.println("¼º°ø");
+	}
+}

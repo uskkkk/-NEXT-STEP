@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="StringCalculatorTest" project="자바 웹 프로그래밍 NEXT_STEP" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="test.StringCalculatorTest" time="0.003" displayname="StringCalculatorTest" uniqueid="[engine:junit-vintage]/[runner:test.StringCalculatorTest]">
+    <testcase name="add" classname="test.StringCalculatorTest" time="0.003" displayname="add" uniqueid="[engine:junit-vintage]/[runner:test.StringCalculatorTest]/[test:add(test.StringCalculatorTest)]"/>
+  </testsuite>
+</testrun>

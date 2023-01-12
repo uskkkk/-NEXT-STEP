@@ -1,0 +1,14 @@
+package test;
+
+import org.junit.Before;
+
+import calculator.StringCalculator;
+
+public class StringCalculatorTest {
+	private StringCalculator sCal;
+	
+	@Before
+	public void setup() {
+		sCal = new StringCalculator();
+	}
+}

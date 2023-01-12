@@ -1,0 +1,24 @@
+package test;
+
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import calculator.StringCalculator;
+
+public class StringCalculatorTest {
+	private StringCalculator sCal;
+	
+	@Before
+	public void ready() {
+		sCal = new StringCalculator();
+	}
+	
+	@Test
+	public void add() {
+		assertEquals(3, sCal.add("1,2"));
+		System.out.println("¼º°ø");
+	}
+}
