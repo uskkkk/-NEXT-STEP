@@ -1,5 +1,5 @@
-org.opentest4j.AssertionFailedError: Expected java.lang.RuntimeException to be thrown, but nothing was thrown.
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:71)
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown ==> expected: <java.lang.RuntimeException> but was: <java.lang.Error>
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:65)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:37)
 	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:2920)
 	at test.StringCalculatorTest.add(StringCalculatorTest.java:25)
@@ -47,4 +47,9 @@ org.opentest4j.AssertionFailedError: Expected java.lang.RuntimeException to be t
 	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
 	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
 	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
+Caused by: java.lang.Error: text는 음수가 아니되어야합니다.
+	at calculator.StringCalculator.add(StringCalculator.java:30)
+	at test.StringCalculatorTest.lambda$0(StringCalculatorTest.java:26)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:55)
+	... 47 more
 

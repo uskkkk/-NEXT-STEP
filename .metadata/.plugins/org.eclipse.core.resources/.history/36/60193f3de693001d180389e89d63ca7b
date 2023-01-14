@@ -21,7 +21,7 @@ public class StringCalculator {
 			if (text.matches("(.*)\\:(.*)") || text.matches("(.*)\\,(.*)")) {
 				String[] numbers = text.split(",|:");
 				for(String value : numbers) {
-					number += Integer.parseInt(value);
+					number += Integer.parseInt(numbers);
 				}
 				return number;
 			}
