@@ -6,9 +6,8 @@ import java.util.regex.Pattern;
 import javax.management.RuntimeErrorException;
 
 public class StringCalculator {
-	
+	int number = 0;
 	public int add(String text) {
-			int number = 0;
 		
 			if(isBlank(text)) {
 				return number;

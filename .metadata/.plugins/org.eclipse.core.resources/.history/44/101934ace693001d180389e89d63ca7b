@@ -24,22 +24,4 @@ public class StringCalculatorTest {
 		assertEquals(1, sCal.add("1"));
 		System.out.println("성공");
 	}
-	
-	@Test
-	public void add_쉼표구분자() {
-		assertEquals(3, sCal.add("1,2"));
-		System.out.println("성공");
-	}
-	
-	@Test
-	public void add_쉼표구분자_또는_콜론구분자() {
-		assertEquals(6, sCal.add("1,2:3"));
-		System.out.println("성공");
-	}
-	
-	@Test
-	public void add_커스텀구분자() {
-		assertEquals(6, sCal.add("1,2:3"));
-		System.out.println("성공");
-	}
 }

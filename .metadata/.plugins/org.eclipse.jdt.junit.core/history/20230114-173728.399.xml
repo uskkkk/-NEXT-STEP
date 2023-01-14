@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="StringCalculatorTest" project="자바 웹 프로그래밍 NEXT_STEP" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="test.StringCalculatorTest" time="0.0" displayname="StringCalculatorTest" uniqueid="[engine:junit-vintage]/[runner:test.StringCalculatorTest]">
+    <testcase name="add_test" classname="test.StringCalculatorTest" time="0.0" displayname="add_test" uniqueid="[engine:junit-vintage]/[runner:test.StringCalculatorTest]/[test:add_test(test.StringCalculatorTest)]"/>
+    <testcase name="add_쉼표구분자" classname="test.StringCalculatorTest" time="0.0" displayname="add_쉼표구분자" uniqueid="[engine:junit-vintage]/[runner:test.StringCalculatorTest]/[test:add_쉼표구분자(test.StringCalculatorTest)]"/>
+  </testsuite>
+</testrun>

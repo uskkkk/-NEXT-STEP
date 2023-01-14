@@ -1,0 +1,52 @@
+package calculator;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import javax.management.RuntimeErrorException;
+
+public class StringCalculator {
+	int number = 0;
+	public int add(String text) {
+		Matcher m = Pattern.compile("//(.)\n(.*)").matcher(text);
+		try {
+			if(text == null || text.isEmpty()) {
+				return number;
+			}
+			
+			if (text.matches("[0-9]*")) {
+				number = Integer.parseInt(text);
+			}
+			
+			if (text.matches("(.*)\\:(.*)") || text.matches("(.*)\\,(.*)")) {
+				String[] numbers = text.split(",|:");
+				return sum(numbers);
+			}
+			
+			if (m.find()) {
+				String customDelimeter = m.group(1);
+				String[] tokens = m.group(2).split(customDelimeter);
+				return sum(tokens);
+			}
+			if (Integer.parseInt(text) < 0) {
+				throw new Error("text는 음수가 아니되어야합니다.");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return number;
+	}
+	
+	public int sum(String[] values) {
+		int sum = 0;
+		for (String value : values) {
+			sum += Integer.parseInt(value);
+		}
+		return sum;
+	}
+
+	public boolean isBlank(String text) {
+		return text.isEmpty() || text == null;
+	}
+	
+}

@@ -6,14 +6,20 @@ import java.util.regex.Pattern;
 import javax.management.RuntimeErrorException;
 
 public class StringCalculator {
-	
+	int number = 0;
 	public int add(String text) {
-			int number = 0;
 		
+		try {
 			if(isBlank(text)) {
 				return number;
 			}
 			
+			if (Integer.parseInt(text) < 0) {
+				throw new Error("text는 음수가 아니되어야합니다.");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		return sum(split(text));
 	}
 	
